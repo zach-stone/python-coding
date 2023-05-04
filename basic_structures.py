@@ -11,6 +11,10 @@ import sys
 opt = sys.argv[1]
 person = sys.argv[2]
 
+# If Or Input Check
+if (len(sys.argv) < 3) or (len(sys.argv) > 3):
+    print "usage: python basic_structures.py [-h|-g] [name]"
+    quit() 
         
 # Greeting Function
 def greeting(greetingType):
@@ -27,7 +31,6 @@ elif opt == '-g':
      greeting('Goodbye')
     
 # Fruit
-
 fruits = ("apple", "banana", "cherry")
 
 for index, fruit in enumerate(fruits):
