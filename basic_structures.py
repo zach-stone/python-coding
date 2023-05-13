@@ -3,11 +3,17 @@
 #
 # BSD License
 #
+#
+# Usage: python3 basic_structures.py (-h|-g) (name)
+
+
 
 
 import sys
 import math
 import numpy as np 
+from makeblock import MegaPi,SerialPort
+
 
 #print (sys.argv[1])
 #print (sys.argv[2])
@@ -18,7 +24,7 @@ person = sys.argv[2]
 
 # If Or Input Check
 if (len(sys.argv) < 3) or (len(sys.argv) > 3):
-    print("usage: python basic_structures.py [-h|-g] [name]")
+    print("usage: python3 basic_structures.py [-h|-g] [name]")
     quit() 
 
 
